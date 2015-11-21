@@ -170,6 +170,9 @@ if __name__ == '__main__':
     package = 'my_pack'
     version = '1.0'
 
+    if not os.path.exists(home + '/ups_db'):
+        os.mkdir(home + '/ups_db')
+
     build_package(home, 'my_lib', lib=True)
     build_package(home, 'my_pack', dep='my_lib')
 
