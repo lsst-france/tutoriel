@@ -155,10 +155,8 @@ if __name__ == '__main__':
         print 'Give the name of the package'
         exit()
 
-    exit()
-
     stack = '/sps/lsst/Library/stack_v11_0'
-    home = os.path.getcwd()
+    home = os.getcwd()
     package = sys.argv[1]
     dep = ''
     if len(sys.argv) > 2:

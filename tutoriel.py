@@ -166,7 +166,7 @@ tests/hello;
 if __name__ == '__main__':
 
     stack = '/sps/lsst/Library/stack_v11_0'
-    home = os.path.getcwd()
+    home = os.getcwd()
     package = 'my_pack'
     version = '1.0'
 
